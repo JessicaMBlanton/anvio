@@ -528,7 +528,8 @@ class SAAVsAndProteinStructuresSummary:
 
         self.progress.new('Populating views dict')
 
-        image_path_template = "%(input_directory)s/04_structure/%(perspective)s/%(gene)s/%(sample)s/%(sample)s_0001.png"
+        image_path_template = "%(input_directory)s/04_structure/%(perspective)s/Images/%(gene)s/%(sample)s/%(sample)s.png"
+        print(image_path_template)
 
         gene_names = sorted(self.genes.keys())
         num_genes = len(gene_names)
